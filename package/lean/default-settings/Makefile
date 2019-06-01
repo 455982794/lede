@@ -7,8 +7,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=default-settings
+<<<<<<< HEAD
 PKG_VERSION:=1.0
 PKG_RELEASE:=38
+=======
+PKG_VERSION:=1.1
+PKG_RELEASE:=39
+>>>>>>> c7c961710dd8f72e94bff40e743291a44b336766
 PKG_LICENSE:=GPLv3
 PKG_LICENSE_FILES:=LICENSE
 
