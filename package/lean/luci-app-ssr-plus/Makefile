@@ -2,7 +2,11 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=luci-app-ssr-plus
 PKG_VERSION:=1
+<<<<<<< HEAD
 PKG_RELEASE:=96
+=======
+PKG_RELEASE:=97
+>>>>>>> b072ad49f784d5ec1e6107aafe96ad1cdacc7696
 
 PKG_CONFIG_DEPENDS:= CONFIG_PACKAGE_$(PKG_NAME)_INCLUDE_Shadowsocks \
 	CONFIG_PACKAGE_$(PKG_NAME)_INCLUDE_V2ray \
