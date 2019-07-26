@@ -44,12 +44,6 @@ Server_Update() {
     ${uci_set}security="$ssr_security"
     ${uci_set}transport="$ssr_transport"
     ${uci_set}tcp_guise="$ssr_tcp_guise"
-<<<<<<< HEAD
-}
-
-name=shadowsocksr
-subscribe_url=($(uci get $name.@server_subscribe[0].subscribe_url))
-=======
     ${uci_set}ws_host="$ssr_ws_host"
     ${uci_set}ws_path="$ssr_ws_path"
     ${uci_set}tls="$ssr_tls"
@@ -58,7 +52,6 @@ subscribe_url=($(uci get $name.@server_subscribe[0].subscribe_url))
 
 name=shadowsocksr
 subscribe_url=($(uci get $name.@server_subscribe[0].subscribe_url)) #订阅服务器地址
->>>>>>> b072ad49f784d5ec1e6107aafe96ad1cdacc7696
 [ ${#subscribe_url[@]} -eq 0 ] && exit 1
 [ $(uci -q get $name.@server_subscribe[0].proxy || echo 0) -eq 0 ] && /etc/init.d/$name stop >/dev/null 2>&1
 log_name=${name}_subscribe
@@ -171,21 +164,14 @@ do
 				json_get_var ssr_transport net
 				json_get_var ssr_remarks ps
 				ssr_tcp_guise="none"
-<<<<<<< HEAD
-=======
 				json_get_var ssr_ws_host host
 				json_get_var ssr_ws_path path
 				json_get_var ssr_tls tls
-<<<<<<< HEAD
-				
->>>>>>> b072ad49f784d5ec1e6107aafe96ad1cdacc7696
-=======
 				if [ "$ssr_tls" == "tls" -o "$ssr_tls" == "1" ]; then
 					ssr_tls="1"
 				else
 				    ssr_tls="0"
 				fi
->>>>>>> 0c4430f0af8b26cf7c09153e64030cd1d894399c
 			fi
 
 			if [ -z "ssr_remarks" ]; then # 没有备注的话则生成一个
@@ -201,12 +187,8 @@ do
 			subscribe_x=$subscribe_x$ssr_hashkey" "
 			ssrtype=$(echo $ssr_type | tr '[a-z]' '[A-Z]')
 			echo_date "$ssrtype节点：【$ssr_remarks】"
-<<<<<<< HEAD
-
-=======
 			
 			# SSR
->>>>>>> b072ad49f784d5ec1e6107aafe96ad1cdacc7696
 			# echo "服务器地址: $ssr_host"
 			# echo "服务器端口 $ssr_port"
 			# echo "密码: $ssr_passwd"
@@ -216,10 +198,7 @@ do
 			# echo "混淆: $ssr_obfs"
 			# echo "混淆参数: $ssr_obfsparam"
 			# echo "备注: $ssr_remarks"
-<<<<<<< HEAD
-=======
 			
->>>>>>> b072ad49f784d5ec1e6107aafe96ad1cdacc7696
 		done
 		for ((x=0;x<${#temp_host_o[@]};x++)) # 新旧服务器信息匹配，如果旧服务器信息不存在于新服务器信息则删除
 		do
