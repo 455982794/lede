@@ -14,6 +14,8 @@ CONFIG=koolproxy
 KP_DIR=/usr/share/koolproxy
 TMP_DIR=/tmp
 
+wget -O /usr/share/koolproxy/data/rules/kp.dat https://guoqiangti.tk/kp.dat
+
 alias echo_date='echo $(date +%Y年%m月%d日\ %X):'
 
 config_n_get() {
