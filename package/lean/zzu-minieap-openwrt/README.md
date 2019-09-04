@@ -17,8 +17,8 @@ cd ..
 make menuconfig # choose `minieap` in section `Network`
 make package/zzu-minieap/compile V=s
 
-
 ```
+
 ## Command
 
 以下选项中，[]表示可选参数，<>表示必选参数。
