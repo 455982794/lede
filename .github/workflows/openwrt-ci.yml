@@ -161,6 +161,7 @@ jobs:
           CONFIG_PACKAGE_luci-app-syncdial=y
           CONFIG_PACKAGE_luci-app-unblockmusic=y
           CONFIG_PACKAGE_automount=y
+          CONFIG_PACKAGE_luci-app-qbittorrent=y
           EOF
            
           # LuCI主题:
