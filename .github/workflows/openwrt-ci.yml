@@ -135,6 +135,7 @@ jobs:
           EOF
           # 常用LuCI插件选择:
           cat >> .config <<EOF
+          CONFIG_PACKAGE_autosamba=y
           CONFIG_PACKAGE_luci-app-adbyby-plus=y
           CONFIG_PACKAGE_luci-app-frpc=y
           CONFIG_PACKAGE_libustream-openssl=y
@@ -152,7 +153,6 @@ jobs:
           CONFIG_PACKAGE_luci-app-wrtbwmon=y
           CONFIG_DEFAULT_luci-app-nlbwmon=y
           CONFIG_PACKAGE_minieap=y
-          CONFIG_PACKAGE_luci-app-samba4=y
           CONFIG_PACKAGE_luci-app-familycloud=y
           CONFIG_PACKAGE_luci-app-koolproxyR=y
           CONFIG_PACKAGE_luci-app-mwan3=y
@@ -167,7 +167,6 @@ jobs:
           # LuCI主题:
           cat >> .config <<EOF
           CONFIG_PACKAGE_luci-theme-argon=y
-          CONFIG_PACKAGE_luci-theme-material=y
           EOF
 
           # 常用软件包:
