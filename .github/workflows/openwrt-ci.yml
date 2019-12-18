@@ -136,6 +136,7 @@ jobs:
           # 常用LuCI插件选择:
           cat >> .config <<EOF
           CONFIG_PACKAGE_autosamba=y
+          CONFIG_PACKAGE_automount=y
           CONFIG_PACKAGE_luci-app-adbyby-plus=y
           CONFIG_PACKAGE_luci-app-frpc=y
           CONFIG_PACKAGE_libustream-openssl=y
@@ -149,6 +150,9 @@ jobs:
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Server=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Socks=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
+          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan=y
+          CONFIG_PACKAGE_luci-app-ssrserver-python=y
+          CONFIG_PACKAGE_luci-app-v2ray-server=y
           CONFIG_PACKAGE_luci-app-ttyd=y
           CONFIG_PACKAGE_luci-app-wrtbwmon=y
           CONFIG_DEFAULT_luci-app-nlbwmon=y
@@ -160,7 +164,6 @@ jobs:
           CONFIG_PACKAGE_luci-app-statistics=y
           CONFIG_PACKAGE_luci-app-syncdial=y
           CONFIG_PACKAGE_luci-app-unblockmusic=y
-          CONFIG_PACKAGE_automount=y
           EOF
            
           # LuCI主题:
