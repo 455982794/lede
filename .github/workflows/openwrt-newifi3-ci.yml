@@ -141,6 +141,8 @@ jobs:
           CONFIG_PACKAGE_luci-app-ttyd=y
           CONFIG_PACKAGE_luci-app-wrtbwmon=y
           CONFIG_DEFAULT_luci-app-nlbwmon=y
+          CONFIG_PACKAGE_luci-app-netdata=y
+          CONFIG_PACKAGE_luci-app-hd-idle=y
           CONFIG_PACKAGE_minieap=y
           CONFIG_PACKAGE_luci-app-familycloud=y
           CONFIG_PACKAGE_luci-app-koolproxyR=y
